@@ -109,12 +109,12 @@ activities.addEventListener("input", (e) =>{
 	// The total activity cost will be calculated and then displayed to the webpage.
 	// The Unary plus operator is used to covert the data-cost from a string to a number.
 	
-    let activityCost = +(isClicked.getAttribute("data-cost"));
-    if (isClicked.checked === true){
-        totalCost += activityCost;
-    } else {
-        totalCost -= activityCost;
-    }
+	let activityCost = +(isClicked.getAttribute("data-cost"));
+	if (isClicked.checked === true){
+		totalCost += activityCost;
+	} else {
+		totalCost -= activityCost;
+	}
     document.querySelector("#total-cost").innerText = `Total $${totalCost}`;
 });
 
